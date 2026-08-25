@@ -176,7 +176,7 @@ val LocalTripColors = staticCompositionLocalOf { LightTripColors }
 val LocalTripShapes = staticCompositionLocalOf { AppTripShapes }
 
 @Composable
-fun TripTheme(
+fun TripBoardTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
