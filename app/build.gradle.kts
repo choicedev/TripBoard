@@ -68,6 +68,7 @@ dependencies {
     // Modules
     implementation(project(":domain"))
     implementation(project(":data"))
+    implementation(libs.androidx.compose.ui.text.google.fonts)
 
     // AndroidX
     implementation(libs.androidx.core.ktx)
