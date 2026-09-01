@@ -181,6 +181,7 @@ fun TripBoardTheme(
     dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
+
     val tripColors = if (darkTheme) DarkTripColors else LightTripColors
 
     val colorScheme = when {

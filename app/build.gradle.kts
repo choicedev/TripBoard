@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.kotlinCompose)
     alias(libs.plugins.hilt)
+    alias(libs.plugins.kotlin.serialization)
     kotlin("kapt")
 }
 
@@ -68,14 +69,17 @@ dependencies {
     // Modules
     implementation(project(":domain"))
     implementation(project(":data"))
-    implementation(libs.androidx.compose.ui.text.google.fonts)
+    implementation(libs.androidx.compose.animation.core)
 
     // AndroidX
     implementation(libs.androidx.core.ktx)
+    implementation(libs.kotlinx.serialization.json)
     implementation(libs.androidx.activity.compose)
 
     implementation(libs.androidx.lifecycle.runtime)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.compose.ui.text.google.fonts)
 
     // Compose
     implementation(platform(libs.androidx.compose.bom))
@@ -83,6 +87,7 @@ dependencies {
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
+    implementation(libs.transportation.consumer)
 
     debugImplementation(libs.androidx.compose.ui.tooling)
 
